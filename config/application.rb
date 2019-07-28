@@ -15,5 +15,8 @@ module FinanceTracker
     # Application configuration can go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded after loading
     # the framework and any gems in your application.
+
+    # Globally initialize the StockQuote API
+    StockQuote::Stock.new(api_key: 'pk_3fa710a5961a42f2a512d0f50faf4356')
   end
 end
