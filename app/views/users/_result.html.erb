@@ -7,4 +7,7 @@
         <strong>Name: <%= @stock.name %></strong>
         <strong>Price: <%= @stock.last_price %></strong>
     </div>
+    <%= link_to "Add to my stocks", user_stocks_path(user: current_user, stock_ticker: @stock.ticker),
+        class: "btn btn-xs btn-success", method: :post
+    %>
 <% end %>
