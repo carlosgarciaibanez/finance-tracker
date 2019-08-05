@@ -11,6 +11,7 @@ gem "twitter-bootstrap-rails"
 gem 'devise-bootstrap-views'
 gem 'jquery-rails'
 gem 'stock_quote'
+gem 'font-awesome-rails'
 
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
@@ -40,8 +41,6 @@ gem 'jbuilder', '~> 2.5'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
-
-gem 'font-awesome-rails'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
